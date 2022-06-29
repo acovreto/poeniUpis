@@ -1,0 +1,117 @@
+body {
+  background: #ffe8cc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.col-struki {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: start;
+  justify-content: center;
+  margin-top: 10px;
+}
+.col-o {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 3px;
+}
+.oceni {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.povedenie {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.change-bg-color {
+  background-color: orange;
+}
+.oceni-container {
+  margin-left: 48px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  width: 40%;
+  cursor: pointer;
+}
+.p-poeni {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.div-poeni {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.num-poeni {
+  width: 30%;
+  font-size: 3rem;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.div-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .col {
+    grid-template-columns: 1fr;
+  }
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+}
